@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Website</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="../home.php">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="teacherreg.html">Teacher Registration</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="teacherfetch.php">Teacher Data</a>
+      </li>
+      <li class="my-2 my-lg-0">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+<div class="divs">
+	<h3>UPDATE PROFILE</h3>
+  <form action="teacherreg.php" method="post">
+    <label for="name">Name</label>
+    <input type="text" id="fname" name="name" placeholder="Your name.." required="required">
+
+    <label for="dept">Department</label>
+    <input type="text"  name="dept" placeholder="Department" required="required">
+
+    <label for="qual">Qualification</label>
+    <input type="text" name="qualification" placeholder="Qualification" required="required">
+
+    <label for="designation">Designation</label>
+    <input type="text" name="designation" placeholder="Designation" required="required">
+    <br>
+    <br>
+
+    <label for="dob">Date of Birth  :</label>
+    <input type="date" name="dob" placeholder="Date of birth" required="required">
+    <br>
+    <br>
+
+    <label for="email">Email</label>
+    <input type="text" name="email" placeholder="Email" required="required">
+
+    <label for="phoneno">Phone No</label>
+    <input type="text" name="phoneno" placeholder="Phone No" required="required">
+
+    <label for="address">Adress</label>
+    <input type="text" name="address" placeholder="Adress" required="required">
+
+    <label for="domain">Domain</label>
+    <input type="text" name="domain" placeholder="Domain" required="required">
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
